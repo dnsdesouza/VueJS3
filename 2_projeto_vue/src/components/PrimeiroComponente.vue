@@ -1,18 +1,17 @@
 <template>
-    <div>
-    <h1>Olá Vue!!</h1>
-    <p>Meu nome é {{ nome }} e trabalho como {{ proficao }}</p>
-    </div>
+    <h1>Olá Vue!</h1>
+    <p>Meu nome é {{nome}} e trabalho como {{profissao}}</p>
 </template>
 
 <script>
     export default{
         name:'PrimeiroComponente',
-        data() {
+        data(){
             return{
                 nome:"Matheus",
-                proficao:"Programador"
+                profissao:"Programador"
             }
-        }
+       
+      }
     }
 </script>
