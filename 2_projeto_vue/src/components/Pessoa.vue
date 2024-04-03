@@ -1,25 +1,26 @@
 <template>
-<div>
-    <h2>Esta é a descricção da pessoa:{{ nome }} </h2>
-    <p>Estou trabalhando </p>
-    <p>Utilizo as seguintes tecnologias</p>
-        <ul>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>Pyton</li>
-        </ul>
-</div>
+    <div>
+        <h2>Esta é a descrição da pessoa:{{ nome }} </h2>
+       <Info />
+       <Form />
+    </div>
 </template>
 
 <script>
+import Info from './Info';
+import Form from './Form';
+
 export default {
-    name: 'PessoaQualquer',
-    data() {
-        return {
-            nome: "MatheusQualquer"
+    name: 'Pessoa',
+    components:{
+        Info,
+        Form
+    },
+        data(){
+            return {
+            nome:'Matheus'  
         }
-    }
+    }   
 }
-
-
+   
 </script>
